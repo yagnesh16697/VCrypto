@@ -20,8 +20,9 @@ export default function BottomTabNavigator() {
     <BottomTab.Navigator
       initialRouteName="Home"
       tabBarOptions={{
-        style: { height: 60 },
-        activeTintColor: Colors[colorScheme].tint,
+        style: { height: 55 },
+        activeTintColor: '#2f95dc',
+        showLabel: false,
       }}
     >
       <BottomTab.Screen
@@ -29,7 +30,7 @@ export default function BottomTabNavigator() {
         component={HomeScreen}
         options={{
           tabBarIcon: ({ color }) => (
-            <AntDesign name="home" size={30} color="black" />
+            <AntDesign name="home" size={30} color={'black'} />
           ),
         }}
       />
@@ -38,7 +39,7 @@ export default function BottomTabNavigator() {
         component={PortfolioScreen}
         options={{
           tabBarIcon: ({ color }) => (
-            <Feather name="pie-chart" size={30} color="black" />
+            <Feather name="pie-chart" size={30} color={'black'} />
           ),
         }}
       />
@@ -47,7 +48,7 @@ export default function BottomTabNavigator() {
         component={MarketScreen}
         options={{
           tabBarIcon: ({ color }) => (
-            <AntDesign name="linechart" size={30} color="black" />
+            <AntDesign name="linechart" size={30} color={'black'} />
           ),
         }}
       />
@@ -56,7 +57,7 @@ export default function BottomTabNavigator() {
         component={RankingsScreen}
         options={{
           tabBarIcon: ({ color }) => (
-            <Octicons name="graph" size={30} color="black" />
+            <Octicons name="graph" size={30} color={'black'} />
           ),
         }}
       />
@@ -66,7 +67,7 @@ export default function BottomTabNavigator() {
         component={ProfileScreen}
         options={{
           tabBarIcon: ({ color }) => (
-            <AntDesign name="user" size={30} color="black" />
+            <AntDesign name="user" size={30} color={'black'} />
           ),
         }}
       />
